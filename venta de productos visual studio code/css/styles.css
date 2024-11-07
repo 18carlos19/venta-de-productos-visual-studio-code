@@ -1,0 +1,89 @@
+/* Fondo y estilo general */
+body {
+    background-color: #b86d4f;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Contenedor principal */
+.contenedor {
+    background-color: #1d2742;
+    padding: 20px;
+    border-radius: 15px;
+    width: 80%;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+/* Título */
+h1 {
+    color: rgb(127, 196, 17);
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+/* Grupo de entradas */
+.grupo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.grupo label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Campos de entrada */
+.grupo input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 7px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+}
+
+/* Estilo de los botones */
+.grupo button {
+    width: 100%;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    color: white;
+    background-image: linear-gradient(to right, #051937, #c70c0c);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.grupo button:hover {
+    background-image: linear-gradient(to right, #c70c0c, #051937);
+}
+
+/* Checkbox */
+#iva {
+    width: auto;
+    margin-left: 0;
+    transform: scale(1.2);
+}
+
+/* Área de resultado */
+textarea {
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 16px;
+    color: #1d2742;
+    font-weight: bold;
+    margin-top: 10px;
+}

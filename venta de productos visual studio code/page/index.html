@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venta de Productos</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/ventas.js"></script>
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Venta de Productos</h1>
+        
+        <!-- Grupo de entrada para el costo -->
+        <div class="grupo">
+            <label for="costo">ingrese el Costo:</label>
+            <input type="number" id="costo" placeholder="Ingrese el costo" required>
+        </div>
+        
+        <!-- Grupo de entrada para el descuento -->
+        <div class="grupo">
+            <label for="descuento">ingrese el Descuento:</label>
+            <input type="number" id="descuento" placeholder="Ingrese el descuento" required>
+        </div>
+        
+        <!-- Checkbox para aplicar IVA -->
+        <div class="grupo">
+            <label for="iva">Incluir IVA:</label>
+            <input type="checkbox" id="iva">
+        </div>
+
+        <!-- Botones para calcular y limpiar -->
+        <div class="grupo">
+            <button onclick="cal.venta()">Calcular</button> 
+            <button id="limpiar" onclick="limpiar()">Limpiar</button>
+        </div>
+
+        <!-- Área de texto para mostrar el resultado -->
+        <textarea id="resp" rows="5" readonly></textarea>
+    </div>
+</body>
+</html>
